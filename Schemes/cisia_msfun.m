@@ -17,7 +17,7 @@ function cisia_msfun(block)
 % calls to the main body of the function.  
 %
 %
-% VER. 3.1.4
+% VER. 3.1.5
 % DATE 11/10/2021
 % AUTHOR: Stefano Panzieri - Roma Tre University
 %
@@ -2454,7 +2454,7 @@ else % NORMAL ENTITY
 
       %disp('scrivo mask values 2')
       
-      if strcmp(get_param(gcs,'FastRestart'),'off')
+      if strcmp(get_param(cisia.gcs,'FastRestart'),'off')
         set_param(gcb,'MaskValues',mask_values);
         %disp('Save on mask')
       end
